@@ -4,14 +4,13 @@ public class FuelCost{
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        double gallonsOfGas, fuelEfficiency, pricePerGallon, costPer100Miles, distance = 1;
+        double gallonsOfGas, fuelEfficiency, pricePerGallon, costPer100Miles, distance;
 
         do {
             System.out.print("Enter the number of gallons of gas in the tank: ");
             if (in.hasNextDouble()){
                 gallonsOfGas = in.nextDouble();
-            }
-            else{
+            }else {
                 in.nextLine();
                 gallonsOfGas = 0;
             }
